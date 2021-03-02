@@ -8,31 +8,26 @@
 // flexbox
 
 
-let mainGrid = document.getElementById("mainGrid");
 
-let ul = document.getElementById("x")
+// selects the unsorted list 
+let ul = document.getElementById("mainGrid")
 
-
-
-
-// add one more square
-
-
-
-
-for (i = 0; i < 10; i++) {
-  let newDiv = document.createElement("li");
+// creates items
+for (i = 0; i < 800; i++) {
+  let newDiv = document.createElement("div");
   newDiv.className = "grid";
   newDiv.id = `coiso${i}`
   ul.appendChild(newDiv);
+
+  // selects every new item created
+  let css = document.getElementById(`coiso${i}`);
+  
+  // changes the background color when mouse passes by
+  css.addEventListener("mouseenter", function(e) {
+    // highlight the mouseenter target
+    e.target.style.backgroundColor = "purple";
+  });
 }
 
-for (i = 0; i < 10; i++) {
-  let css = document.getElementById(`coiso${i}`);
-// This handler will be executed only once when the cursor
-// moves over the unordered list
-css.addEventListener("mouseenter", function(e) {
-  // highlight the mouseenter target
-  e.target.style.backgroundColor = "purple";
-});
-}
+
+
