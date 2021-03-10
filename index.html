@@ -6,10 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div id="mainGrid">
 
-        </div>
+    <div id="buttonDiv">
+        <button id="button" onclick="changeGridSize()">CLICK TO CHANGE GRID SIZE</button>
+    </div>
+
+    <div id="mainGrid" class="container" style="grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr);">
+
     </div>
 
     <script src="scipt.js"></script>

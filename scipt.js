@@ -11,9 +11,20 @@
 
 // selects the unsorted list 
 let ul = document.getElementById("mainGrid")
+let grid = 256;
+
+
+
+function changeGridSize(number) {
+  grid = prompt("Please enter the grid size.");
+
+  return grid = grid*grid;
+}
+
+
 
 // creates items
-for (i = 0; i < 800; i++) {
+for (i = 0; i < grid; i++) {
   let newDiv = document.createElement("div");
   newDiv.className = "grid";
   newDiv.id = `coiso${i}`
