@@ -66,7 +66,15 @@ function changeGridSize(number) {
 
 }
 
+// clears the background color
+function clearBackground() {
 
+  for (i = 0; i < grid; i++) {
+    let css = document.getElementById(`coiso${i}`);
+    css.style.backgroundColor = "white";
+  }
+  
+}
 
 
 
