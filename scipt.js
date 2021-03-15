@@ -45,24 +45,31 @@ function changeGridSize(number) {
   // removes the grid if exists before creating a new one
   document.getElementsByClassName("grid").remove();
   
-  // creates the grid
-  for (i = 0; i < grid; i++) {
-    let newDiv = document.createElement("div");
-    newDiv.className = "grid";
-    newDiv.id = `coiso${i}`
-    ul.appendChild(newDiv);
-  
-
-  
-    // selects every new item created
-    let css = document.getElementById(`coiso${i}`);
+  // limits the grid to 100x100
+  if (grid <= 10000) {
+      // creates the grid
+    for (i = 0; i < grid; i++) {
+      let newDiv = document.createElement("div");
+      newDiv.className = "grid";
+      newDiv.id = `coiso${i}`
+      ul.appendChild(newDiv);
     
-    // changes the background color when mouse passes by
-    css.addEventListener("mouseenter", function(e) {
-      // highlight the mouseenter target
-      e.target.style.backgroundColor = "purple";
-    });
+
+      // selects every new item created
+      let css = document.getElementById(`coiso${i}`);
+      
+      // changes the background color when mouse passes by
+      css.addEventListener("mouseenter", function(e) {
+        // highlight the mouseenter target
+        e.target.style.backgroundColor = `rgb(${Math.floor((Math.random() * 255) + 1)}, ${Math.floor((Math.random() * 255) + 1)}, ${Math.floor((Math.random() * 255) + 1)})`;
+      });
+    }
   }
+  else {
+    alert("Please enter a number less than 100 to the grid to work, Thank you.")
+  }
+
+
 
 }
 
