@@ -6,6 +6,7 @@
 }
 
 body {
+	height: 100%;
 	background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
 }
 
@@ -47,26 +48,22 @@ body {
 }
 
 #button {
-	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	background:linear-gradient(to bottom, #4d6aa8 5%, #5972a7 100%);
-	background-color:#4d6aa8;
-	border:1px solid #314179;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-}
-#button :hover {
-	background:linear-gradient(to bottom, #5972a7 5%, #4d6aa8 100%);
-	background-color:#5972a7;
-}
-#button :active {
-	position:relative;
-	top:1px;
+	background-color: red; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+
+#button:hover {
+background-color: white;
+color: black;
 }
 
 #idClear {
@@ -77,26 +74,20 @@ body {
 }
 
 #buttonClear {
-    box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	background:linear-gradient(to bottom, #4d6aa8 5%, #5972a7 100%);
-	background-color:#4d6aa8;
-	border:1px solid #314179;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-}
+	background-color: red; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
 
 #buttonClear:hover {
-    background:linear-gradient(to bottom, #5972a7 5%, #4d6aa8 100%);
-	background-color:#5972a7;
-}
-
-#buttonClear :active {
-    position:relative;
-	top:1px;
+background-color: white;
+color: black;
 }
